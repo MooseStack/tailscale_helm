@@ -4,8 +4,8 @@
 
 secret:
   TS_ROUTES: "10.0.0.8/32" # comma separated
-  TS_AUTHKEY: "tskey-auth-123abc" # do not hardcode/commit this.
-  TS_EXTRA_ARGS: "--advertise-exit-node --accept-routes" # this will enable the subnet router
+  TS_AUTHKEY: "tskey-client-123abc" # do not hardcode/commit this.
+  TS_EXTRA_ARGS: "--advertise-exit-node --accept-routes --advertise-tags=tag:tailscale" # this will enable the subnet router
 
 # This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 1
