@@ -3,13 +3,15 @@
 Deploy Tailscale as a Subnet Router(VPN like/forwarder from a specific pod) using Helm to OpenShift/Kubernetes.
 
 ## Prerequisite:
-1. Generate an auth key from [Tailscale's Machines tab](https://login.tailscale.com/admin/machines/new-linux)
+1. `git clone https://github.com/mdbell47/tailscale_helm.git && cd tailscale_helm`
+
+2. Generate an auth key from [Tailscale's Machines tab](https://login.tailscale.com/admin/machines/new-linux)
    - Enable Tags
    - Enable Ephemeral (to remove stale connections when pod restarts)
    - Enable "Use as exit node"
    - Enable "Reusable"
 
-2. Update [values.yaml](tailscale/values.yaml) `secret` section:
+3. Update [values.yaml](tailscale/values.yaml) `secret` section:
    - `TS_ROUTES` : the subnet block that you want to access, can be comma separated.
    - `TS_AUTHKEY` : the auth key from step #1
    - `TS_EXTRA_ARGS` : you can leave this as-is. Currently, using tailscale as a subnet router. So those extra args are required to work.
