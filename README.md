@@ -3,7 +3,7 @@
 Deploy Tailscale as a Subnet Router(VPN like/forwarder from a specific pod) using Helm to OpenShift/Kubernetes.
 
 ## Prerequisite:
-1. `git clone https://github.com/mdbell47/tailscale_helm.git && cd tailscale_helm`
+1. `git clone https://github.com/MooseStack/tailscale_helm.git && cd tailscale_helm`
 
 2. Add tag in Tailscales ACL in [access controls](https://login.tailscale.com/admin/acls/file) tab
  ```
