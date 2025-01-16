@@ -34,4 +34,4 @@ Deploy Tailscale as a Subnet Router(VPN like/forwarder from a specific pod) usin
    - `Disable key expirey` if needed.
    - `Edit route settings` -> check the box for the `subnet routes` and `Use as exit node` -> Save
 
-3. You can now install the Tailscale mobile app/desktop/VsCode extention/etc, login, and choose the pod as Exit Node to gain VPN/forwarder-like access. Enjoy!
+3. You can now install the Tailscale mobile app/desktop//etc, login, and choose the pod as Exit Node to gain VPN/forwarder-like access. Enjoy!
